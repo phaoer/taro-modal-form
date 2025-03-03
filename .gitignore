@@ -1,0 +1,9 @@
+.DS_Store
+.swc
+node_modules/
+npm-debug.log
+yarn-error.log
+.npmrc
+dist
+index.d.ts
+index.js

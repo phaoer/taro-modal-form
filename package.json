@@ -1,0 +1,81 @@
+{
+	"name": "taro-modal-form",
+	"version": "1.0.0",
+	"description": "A powerful and flexible modal form component for Taro.",
+	"keywords": [
+		"taro",
+		"modal",
+		"form",
+		"modal-form",
+		"tarojs",
+		"taro-component",
+		"form-validation",
+		"react",
+		"typescript",
+		"ui-component"
+	],
+	"homepage": "https://github.com/phaoer/taro-modal-form",
+	"bugs": "https://github.com/phaoer/taro-modal-form/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/phaoer/taro-modal-form"
+	},
+	"license": "MIT",
+	"author": "phaoer",
+	"type": "module",
+	"exports": {
+		".": {
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			},
+			"default": {
+				"types": "./index.d.ts",
+				"default": "./index.js"
+			}
+		}
+	},
+	"main": "./dist/index.cjs",
+	"module": "./index.js",
+	"types": "./index.d.ts",
+	"files": [
+		"dist",
+		"index.js",
+		"index.d.ts",
+		"README.md",
+		"README.zh-CN.md",
+		"LICENSE",
+		"package.json"
+	],
+	"scripts": {
+		"build": "rollup -c",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^28.0.2",
+		"@rollup/plugin-node-resolve": "^16.0.0",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/react": "^16.2.0",
+		"@types/jest": "^29.5.14",
+		"@types/react": "^16.9.0",
+		"@types/react-dom": "^16.9.0",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"prettier": "^3.5.1",
+		"prettier-plugin-organize-imports": "^4.1.0",
+		"prettier-plugin-packagejson": "^2.5.8",
+		"rollup": "^4.34.8",
+		"rollup-plugin-dts": "^6.1.1",
+		"rollup-plugin-typescript2": "^0.36.0",
+		"ts-jest": "^29.2.6",
+		"tslib": "^2.8.1",
+		"typescript": "^5.7.3"
+	},
+	"peerDependencies": {
+		"@tarojs/components": ">=3.6.26",
+		"@tarojs/taro": ">=3.6.26",
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0"
+	}
+}
